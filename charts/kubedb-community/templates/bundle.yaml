@@ -1,0 +1,63 @@
+apiVersion: kubepack.com/v1alpha1
+kind: Bundle
+metadata:
+  creationTimestamp: null
+  name: '{{ include "kubedb-community.fullname" . }}'
+spec:
+  description: Free open source edition for test and development
+  displayName: Kubedb Community
+  features: [
+    { "trait": "Recommended for", "value": "Recommended if you are experimenting or testing" },
+    { "trait": "Response Times", "value": "Best effort" },
+    { "trait": "Support Coverage", "value": "N/A" },
+    { "trait": "Emergency patches", "value": "x" },
+    { "trait": "Unlimited Incidents", "value": "x" },
+    { "trait": "Contacts for Ticketing", "value": "x" },
+    { "trait": "Community Support", "value": "Included (Public Slack & GitHub issues)" },
+    { "trait": "Remote Hands (Debug via Zoom)", "value": "Yes (charged at $200/hr)" },
+    { "trait": "Production Runbook", "value": "x" },
+    { "trait": "Dedicated Private chat (via Slack)", "value": "x" },
+    { "trait": "Phone support", "value": "x" },
+    { "trait": "Architectural Guidance", "value": "x" },
+    { "trait": "Professional Services", "value": "Additional fees" }
+  ]
+  icons:
+  - src: https://cdn.appscode.com/images/icon/kubedb.png
+    type: image/png
+  links:
+  - description: website
+    url: https://github.com/kubedb/installer
+  maintainers:
+  - email: kubedb@appscode.com
+    name: appscode
+  namespace: kube-system
+  packages:
+  - chart:
+      features:
+      - KubeDB by AppsCode - Production ready databases on Kubernetes
+      name: kubedb
+      required: true
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v0.13.0-rc.0
+  - chart:
+      features:
+      - KubeDB Catalog by AppsCode - Catalog for database versions
+      name: kubedb-catalog
+      required: true
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v0.13.0-rc.0
+  - chart:
+      features:
+      - A Helm chart for cert-manager
+      name: cert-manager
+      namespace: cert-manager
+      url: https://charts.jetstack.io
+      versions:
+      - version: v0.15.1
+  - bundle:
+      name: stash-community
+      url: https://bundles.byte.builders/stable
+      version: v0.9.0-rc.6
+status: {}

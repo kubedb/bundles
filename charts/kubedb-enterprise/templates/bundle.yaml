@@ -1,0 +1,71 @@
+apiVersion: kubepack.com/v1alpha1
+kind: Bundle
+metadata:
+  creationTimestamp: null
+  name: '{{ include "kubedb-enterprise.fullname" . }}'
+spec:
+  description: Production ready Databases with Day 2 operation automation
+  displayName: Kubedb Enterprise
+  features: [
+    { "trait": "Recommended for", "value": "Recommended if you have business and/or mission critical workloads." },
+    { "trait": "Response Times", "value": "General guidance: < 48 business hours\nSystem impaired: < 24 business hours\nProduction system impaired: < 2 hours" },
+    { "trait": "Support Coverage", "value": "24x7x365" },
+    { "trait": "Emergency patches", "value": "Yes (as required)" },
+    { "trait": "Unlimited Incidents", "value": "Yes" },
+    { "trait": "Contacts for Ticketing", "value": "10" },
+    { "trait": "Community Support", "value": "Included (Public Slack & GitHub issues)" },
+    { "trait": "Remote Hands (Debug via Zoom)", "value": "Included (as negotiated)" },
+    { "trait": "Production Runbook", "value": "Yes" },
+    { "trait": "Dedicated Private chat (via Slack)", "value": "Yes" },
+    { "trait": "Phone support", "value": "Yes" },
+    { "trait": "Architectural Guidance", "value": "Consultative review and guidance based on your applications" },
+    { "trait": "Professional Services", "value": "Additional fees" }
+  ]
+  icons:
+  - src: https://cdn.appscode.com/images/icon/kubedb.png
+    type: image/png
+  links:
+  - description: website
+    url: https://github.com/kubedb/installer
+  maintainers:
+  - email: kubedb@appscode.com
+    name: appscode
+  namespace: kube-system
+  packages:
+  - chart:
+      features:
+      - KubeDB by AppsCode - Production ready databases on Kubernetes
+      name: kubedb
+      required: true
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v0.13.0-rc.0
+  - chart:
+      features:
+      - KubeDB by AppsCode - Production ready databases on Kubernetes
+      name: kubedb-enterprise
+      required: true
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v0.13.0-rc.0
+  - chart:
+      features:
+      - KubeDB Catalog by AppsCode - Catalog for database versions
+      name: kubedb-catalog
+      required: true
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v0.13.0-rc.0
+  - chart:
+      features:
+      - A Helm chart for cert-manager
+      name: cert-manager
+      namespace: cert-manager
+      url: https://charts.jetstack.io
+      versions:
+      - version: v0.15.1
+  - bundle:
+      name: stash-community
+      url: https://bundles.byte.builders/stable
+      version: v0.9.0-rc.6
+status: {}
