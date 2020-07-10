@@ -54,7 +54,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v2020.07.10-beta.0
+      - version: v0.14.0-beta.1
   - chart:
       features:
       - KubeDB by AppsCode - Production ready databases on Kubernetes
@@ -70,7 +70,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v0.13.0-rc.0
+      - version: v0.14.0-beta.1
   - chart:
       features:
       - A Helm chart for cert-manager
