@@ -6,21 +6,33 @@ metadata:
 spec:
   description: Free open source edition for test and development
   displayName: Kubedb Community
-  features: [
-    { "trait": "Recommended for", "value": "Recommended if you are experimenting or testing" },
-    { "trait": "Response Times", "value": "Best effort" },
-    { "trait": "Support Coverage", "value": "N/A" },
-    { "trait": "Emergency patches", "value": "x" },
-    { "trait": "Unlimited Incidents", "value": "x" },
-    { "trait": "Contacts for Ticketing", "value": "x" },
-    { "trait": "Community Support", "value": "Included (Public Slack & GitHub issues)" },
-    { "trait": "Remote Hands (Debug via Zoom)", "value": "Yes (charged at $200/hr)" },
-    { "trait": "Production Runbook", "value": "x" },
-    { "trait": "Dedicated Private chat (via Slack)", "value": "x" },
-    { "trait": "Phone support", "value": "x" },
-    { "trait": "Architectural Guidance", "value": "x" },
-    { "trait": "Professional Services", "value": "Additional fees" }
-  ]
+  features:
+  - trait: Recommended for
+    value: Recommended if you are experimenting or testing
+  - trait: Response Times
+    value: Best effort
+  - trait: Support Coverage
+    value: N/A
+  - trait: Emergency patches
+    value: x
+  - trait: Unlimited Incidents
+    value: x
+  - trait: Contacts for Ticketing
+    value: x
+  - trait: Community Support
+    value: Included (Public Slack & GitHub issues)
+  - trait: Remote Hands (Debug via Zoom)
+    value: Yes (charged at $200/hr)
+  - trait: Production Runbook
+    value: x
+  - trait: Dedicated Private chat (via Slack)
+    value: x
+  - trait: Phone support
+    value: x
+  - trait: Architectural Guidance
+    value: x
+  - trait: Professional Services
+    value: Additional fees
   icons:
   - src: https://cdn.appscode.com/images/icon/kubedb.png
     type: image/png
@@ -39,7 +51,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v0.13.0-rc.0
+      - version: v2020.07.10-beta.0
   - chart:
       features:
       - KubeDB Catalog by AppsCode - Catalog for database versions
