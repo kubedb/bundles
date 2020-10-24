@@ -51,7 +51,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v0.14.0-beta.2
+      - version: v0.14.0-beta.4
   - chart:
       features:
       - KubeDB Catalog by AppsCode - Catalog for database versions
@@ -59,7 +59,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v0.14.0-beta.2
+      - version: v0.14.0-beta.4
   - chart:
       features:
       - A Helm chart for cert-manager
