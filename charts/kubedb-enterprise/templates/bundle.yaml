@@ -65,6 +65,14 @@ spec:
       - version: v0.2.2
   - chart:
       features:
+      - KubeDB by AppsCode - Production ready databases on Kubernetes
+      name: kubedb-autoscaler
+      required: false
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v0.0.1
+  - chart:
+      features:
       - KubeDB Catalog by AppsCode - Catalog for database versions
       name: kubedb-catalog
       required: true
@@ -78,7 +86,7 @@ spec:
       namespace: cert-manager
       url: https://charts.jetstack.io
       versions:
-      - version: v0.15.1
+      - version: v1.1.0
   - bundle:
       name: stash-community
       url: https://bundles.byte.builders/stable
