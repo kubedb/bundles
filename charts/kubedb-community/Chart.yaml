@@ -2,8 +2,8 @@ apiVersion: v2
 name: kubedb-community
 description: KubeDB Community Plan
 type: application
-version: v2021.01.15
-appVersion: v2021.01.15
+version: v2021.01.26
+appVersion: v2021.01.26
 home: https://kubedb.com
 icon: https://cdn.appscode.com/images/icon/kubedb.png
 sources:
