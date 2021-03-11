@@ -47,7 +47,7 @@ spec:
   - chart:
       features:
       - KubeDB by AppsCode - Production ready databases on Kubernetes
-      name: kubedb
+      name: kubedb-community
       required: true
       url: https://charts.appscode.com/stable/
       versions:
@@ -71,5 +71,5 @@ spec:
   - bundle:
       name: stash-community
       url: https://bundles.byte.builders/stable
-      version: v0.9.0-rc.6
+      version: v0.11.10
 status: {}
