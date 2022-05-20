@@ -54,7 +54,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v2022.03.28
+      - version: v2022.05.24
   - chart:
       features:
       - KubeDB by AppsCode - Production ready databases on Kubernetes
@@ -69,7 +69,7 @@ spec:
       name: kubedb-autoscaler
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v0.11.0
+      - version: v0.12.0
   - chart:
       features:
       - KubeDB Catalog by AppsCode - Catalog for database versions
@@ -77,7 +77,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v2022.03.28
+      - version: v2022.05.24
   - chart:
       features:
       - A Helm chart for cert-manager
