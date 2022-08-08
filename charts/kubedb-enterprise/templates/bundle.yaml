@@ -57,37 +57,19 @@ spec:
       - version: v2022.08.08
   - chart:
       features:
-      - KubeDB by AppsCode - Production ready databases on Kubernetes
-      name: kubedb-enterprise
-      required: true
-      url: https://charts.appscode.com/stable/
-      versions:
-      - version: v0.13.0
-  - chart:
-      features:
-      - KubeDB by AppsCode - Production ready databases on Kubernetes
-      name: kubedb-autoscaler
-      url: https://charts.appscode.com/stable/
-      versions:
-      - version: v0.13.0
-  - chart:
-      features:
-      - KubeDB Catalog by AppsCode - Catalog for database versions
-      name: kubedb-catalog
-      required: true
-      url: https://charts.appscode.com/stable/
-      versions:
-      - version: v2022.08.08
-  - chart:
-      features:
       - A Helm chart for cert-manager
       name: cert-manager
       namespace: cert-manager
+      required: true
       url: https://charts.jetstack.io
       versions:
-      - version: v1.1.0
-  - bundle:
-      name: stash-community
-      url: https://bundles.byte.builders/stable
-      version: v0.9.0-rc.6
+      - version: v1.9.1
+  - chart:
+      features:
+      - Stash by AppsCode - Backup your Kubernetes native applications
+      name: stash
+      required: true
+      url: https://charts.appscode.com/stable/
+      versions:
+      - version: v2022.07.09
 status: {}
