@@ -7,11 +7,12 @@ on:
   push:
     branches:
       - master
-
   workflow_dispatch:
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
+
 jobs:
   build:
     name: Build
@@ -69,7 +70,7 @@ jobs:
           echo
           kubectl version
           echo
-          kubectl apply -f https://github.com/kubepack/kubepack/raw/master/crds/kubepack.com_bundles.yaml --validate=false
+          kubectl apply -f https://github.com/kubepack/kubepack/raw/v0.5.2/crds/kubepack.com_bundles.yaml --validate=false
           kubectl wait --for=condition=NamesAccepted crds --all --timeout=5m
 
       - name: Test bundles

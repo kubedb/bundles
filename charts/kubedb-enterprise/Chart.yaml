@@ -2,8 +2,8 @@ apiVersion: v2
 name: kubedb-enterprise
 description: KubeDB Enterprise Plan
 type: application
-version: v2023.04.10
-appVersion: v2023.04.10
+version: v2023.06.13-rc.0
+appVersion: v2023.06.13-rc.0
 home: https://kubedb.com
 icon: https://cdn.appscode.com/images/icon/kubedb.png
 sources:
