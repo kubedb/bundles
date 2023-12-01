@@ -54,7 +54,7 @@ spec:
       required: true
       url: https://charts.appscode.com/stable/
       versions:
-      - version: v2023.11.29-rc.0
+      - version: v2023.12.1-rc.1
   - chart:
       features:
       - A Helm chart for cert-manager
