@@ -55,7 +55,7 @@ spec:
       sourceRef:
         name: ""
       versions:
-      - version: v2024.3.9-rc.0
+      - version: v2024.3.16
   - chart:
       features:
       - A Helm chart for cert-manager
